@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brain Tumor Classifier</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      width: 400px;
+      animation: fade-in 1s ease;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    input[type="file"] {
+      margin: 15px 0;
+    }
+
+    button {
+      background: #00cec9;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #55efc4;
+    }
+
+    .result, .chatbox {
+      margin-top: 20px;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .heatmap {
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .chat-response {
+      margin-top: 10px;
+      color: #ffeaa7;
+      font-style: italic;
+      white-space: pre-wrap;
+    }
+
+    textarea {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Brain Tumor Classification</h1>
+
+  <form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <br>
+    <button type="submit">Upload and Predict</button>
+  </form>
+
+  {% if label %}
+    <div class="result">
+      <strong>Prediction:</strong> {{ label }}<br>
+      {% if gradcam_path %}
+        <img src="{{ gradcam_path }}" class="heatmap" alt="GradCAM Heatmap">
+      {% endif %}
+    </div>
+
+    <div class="chatbox">
+      <h3>Ask our Assistant</h3>
+      <textarea id="chatInput" rows="3" placeholder="Ask anything about the diagnosis..."></textarea>
+      <button onclick="sendMessage()">Send</button>
+      <div class="chat-response" id="chatResponse"></div>
+    </div>
+  {% endif %}
+</div>
+
+<script>
+  function sendMessage() {
+    const message = document.getElementById('chatInput').value;
+    const prediction = "{{ label }}";
+    const chatResponse = document.getElementById('chatResponse');
+
+    if (!message.trim()) {
+      chatResponse.innerText = "Please enter your question.";
+      return;
+    }
+
+    chatResponse.innerText = "Thinking...";
+
+    fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: message, prediction: prediction })
+    })
+    .then(res => res.json())
+    .then(data => {
+      chatResponse.innerText = data.response;
+    })
+    .catch(err => {
+      chatResponse.innerText = "Error contacting the assistant.";
+    });
+  }
+</script>
+
+</body>
+</html>
