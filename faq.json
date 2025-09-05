@@ -1,0 +1,122 @@
+[
+  {
+    "instruction": "What is glioma?",
+    "response": "Glioma is a tumor that develops from glial cells in the brain or spinal cord. It can grow slowly or rapidly depending on the type."
+  },
+  {
+    "instruction": "Explain glioma in simple terms",
+    "response": "Glioma is a brain or spinal cord tumor that originates from supportive cells called glial cells. It may be low-grade or high-grade."
+  },
+  {
+    "instruction": "Tell me about glioma",
+    "response": "Glioma is a type of tumor in the brain or spinal cord. It can progress slowly or quickly and affects various brain functions depending on its location."
+  },
+  {
+    "instruction": "What are the common symptoms of glioma?",
+    "response": "Symptoms include headaches, seizures, memory issues, difficulty speaking, vision problems, and personality changes."
+  },
+  {
+    "instruction": "How does glioma affect patients?",
+    "response": "Glioma can cause neurological problems like headaches, seizures, and cognitive or speech difficulties depending on tumor size and location."
+  },
+  {
+    "instruction": "What causes glioma?",
+    "response": "The exact cause is unknown, but risk factors include genetic mutations, radiation exposure, family history, and age."
+  },
+  {
+    "instruction": "Diet recommendations for glioma patients",
+    "response": "Eat fruits, vegetables, whole grains, and omega-3 rich foods like fish and flaxseed. Avoid processed foods and excess sugar."
+  },
+  {
+    "instruction": "Exercises suitable for glioma patients",
+    "response": "Light activities like walking, yoga, and stretching help maintain energy and reduce stress. Heavy workouts should be avoided."
+  },
+  {
+    "instruction": "How is glioma treated?",
+    "response": "Treatment may involve surgery, radiation, chemotherapy, or targeted drugs. A doctor will determine the exact plan."
+  },
+  {
+    "instruction": "Precautions for glioma patients",
+    "response": "Follow medical advice, avoid smoking and alcohol, eat a healthy diet, and attend regular checkups."
+  },
+
+  {
+    "instruction": "What is meningioma?",
+    "response": "Meningioma is a tumor that forms on the membranes covering the brain and spinal cord. Most are benign but can cause problems if they grow."
+  },
+  {
+    "instruction": "Tell me about meningioma causes",
+    "response": "Causes may include genetic changes, radiation exposure, hormonal factors, and neurofibromatosis type 2 (NF2)."
+  },
+  {
+    "instruction": "Symptoms of meningioma",
+    "response": "Symptoms vary with tumor location and can include headaches, vision problems, hearing loss, memory issues, and seizures."
+  },
+  {
+    "instruction": "Diet for meningioma patients",
+    "response": "Eat antioxidant-rich foods like berries and spinach, omega-3 sources like salmon, lean protein, and fiber. Avoid processed and fried foods."
+  },
+  {
+    "instruction": "Treatment for meningioma",
+    "response": "Treatment can include surgery, radiation therapy, and rarely chemotherapy. Corticosteroids may be used to reduce swelling."
+  },
+  {
+    "instruction": "Exercises for meningioma patients",
+    "response": "Gentle activities like walking, meditation, and breathing exercises help reduce fatigue and stress."
+  },
+  {
+    "instruction": "Precautions for meningioma patients",
+    "response": "Follow medical advice, attend regular MRI scans, avoid head injuries, and maintain a balanced lifestyle."
+  },
+
+  {
+    "instruction": "What is a pituitary tumor?",
+    "response": "Pituitary tumors develop in the pituitary gland, which controls hormones. Most are noncancerous (adenomas)."
+  },
+  {
+    "instruction": "Causes of pituitary tumors",
+    "response": "Causes include genetic mutations, inherited conditions like MEN1, and abnormal cell growth in the pituitary gland."
+  },
+  {
+    "instruction": "Symptoms of pituitary tumors",
+    "response": "Symptoms include vision problems, headaches, weight changes, irregular periods, infertility, and hormone imbalances."
+  },
+  {
+    "instruction": "Diet for pituitary tumor patients",
+    "response": "Eat hormone-friendly foods such as soy, whole grains, leafy greens, nuts, and seeds. Avoid high sugar and processed foods."
+  },
+  {
+    "instruction": "Treatment for pituitary tumors",
+    "response": "Treatment may include medications like dopamine agonists, hormone therapy, or surgery depending on tumor type."
+  },
+  {
+    "instruction": "Exercises for pituitary tumor patients",
+    "response": "Light exercises like walking, swimming, and yoga help maintain overall health and hormone balance."
+  },
+  {
+    "instruction": "Precautions for pituitary tumor patients",
+    "response": "Take prescribed medicines, monitor hormone levels, attend follow-ups, and avoid stress."
+  },
+
+  {
+    "instruction": "I have no tumor, how should I maintain a healthy brain?",
+    "response": "Maintain a healthy lifestyle with regular exercise, balanced diet, hydration, mental stimulation, and avoid smoking or alcohol."
+  },
+  {
+    "instruction": "Diet for a healthy brain",
+    "response": "Consume omega-3 rich foods, antioxidants like blueberries and spinach, nuts, seeds, and whole grains."
+  },
+  {
+    "instruction": "Exercises for a healthy brain",
+    "response": "Engage in aerobic exercises, yoga, meditation, and mental activities like puzzles or memory games."
+  },
+  {
+    "instruction": "Precautions for a healthy brain",
+    "response": "Attend regular checkups, follow a balanced lifestyle, protect your head from injuries, and avoid harmful habits."
+  },
+
+  {
+    "instruction": "What lifestyle changes help prevent brain tumors?",
+    "response": "Maintain a healthy diet, exercise regularly, avoid smoking and excessive alcohol, manage stress, and attend medical checkups."
+  }
+]
